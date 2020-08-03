@@ -1,0 +1,5 @@
+.elements__card {
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,12 @@
+@import url(__card/elements__card.css);
+@import url(__card-image/elements__card-image.css);
+@import url(__card-title/elements__card-title.css);
+
+.elements {
+    max-width: 882px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: auto;
+    border: 1px solid red;
+}
