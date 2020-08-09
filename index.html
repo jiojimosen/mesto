@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesto Russia</title>
+  <title>Место</title>
   <link href="./pages/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="wrapper">
+        <div class="popup">
+            <div class="popup__container">
+                <!--<div class="popup__container-cross" onclick="popupOpen()"></div>-->
+                <form class="form-edit">
+                    <p class="form-edit__title">Редактировать профиль</p>
+                    <fieldset class="form-edit__person">
+                        <input class="form-edit__name" type="text" name="name">
+                        <input class="form-edit__description" type="text" name="description">
+                        <input class="form-edit__submit" type="submit">
+                    </fieldset>
+                </form>
+                <div class="popup__container-cross"></div>
+            </div>
+        </div>
 
         <header class="header wrapper__header">
             <img class="header__logo" src="images/logo.svg" alt="Лого" />
@@ -15,28 +29,71 @@
 
         <section class="profile wrapper__profile">
             <img class="profile__image" src="images/profile-image.png" alt="Изображение профиля" />
-            <div class="profile__text">
+            <!--<div class="profile__text">
                 <h1 class="profile__title">Жак-Ив Кусто</h1>
                 <p class="profile__subtitle">Исследователь океана</p>
+            </div>-->
+            <div class="profile__info">
+                <div class="profile__name">
+                    <h1 class="profile__title">Жак-Ив Кусто</h1>
+                    <button class="profile__edit-button"></button>
+                </div>
+                <p class="profile__subtitle">Исследователь океана</p>
             </div>
-            <div class="profile__edit-button"></div>
-            <div class="profile__add-button"></div>
+            <button class="profile__add-button"></button>
         </section>
 
         <main class="elements">
             <div class="elements__card">
                 <img class="elements__card-image" src="images/cards/karachaevsk.png" alt="Карачаевск">
-                <h2 class="elements__card-title">Карачаевск</h2>
+                <div class="elements__card-content">
+                    <h2 class="elements__card-title">Карачаевск</h2>
+                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                </div>
             </div>
-            <div class="elements__card"></div>
-            <div class="elements__card"></div>
-            <div class="elements__card"></div>
-            <div class="elements__card"></div>
-            <div class="elements__card"></div>
+            <div class="elements__card">
+                <img class="elements__card-image" src="images/cards/elbrus.png" alt="Эльбрус">
+                <div class="elements__card-content">
+                    <h2 class="elements__card-title">Гора Эльбрус</h2>
+                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                </div>
+            </div>
+            <div class="elements__card">
+                <img class="elements__card-image" src="images/cards/dombay.png" alt="Домбай">
+                <div class="elements__card-content">
+                    <h2 class="elements__card-title">Домбай</h2>
+                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                </div>
+            </div>
+            <div class="elements__card">
+                <img class="elements__card-image" src="images/cards/elbrus.png" alt="Эльбрус">
+                <div class="elements__card-content">
+                    <h2 class="elements__card-title">Гора Эльбрус</h2>
+                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                </div>
+            </div>
+            <div class="elements__card">
+                <img class="elements__card-image" src="images/cards/dombay.png" alt="Домбай">
+                <div class="elements__card-content">
+                    <h2 class="elements__card-title">Домбай</h2>
+                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                </div>
+            </div>
+            <div class="elements__card">
+                <img class="elements__card-image" src="images/cards/karachaevsk.png" alt="Карачаево-Черкессия">
+                <div class="elements__card-content">
+                    <h2 class="elements__card-title">Карачаево-Черкессия</h2>
+                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                </div>
+            </div>
         </main>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <p class="footer__title">&copy 2020 Mesto Russia</p>
+        </footer>
     
     </div>
+<script src="blocks/popup/popup.js"></script>
+<script src="blocks/form-edit/form-edit.js"></script>   
 </body>
 </html>

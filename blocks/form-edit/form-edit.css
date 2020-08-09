@@ -1,0 +1,14 @@
+@import url(__person/form-edit__person.css);
+@import url(__title/form-edit__title.css);
+@import url(__name/form-edit__name.css);
+@import url(__description/form-edit__description.css);
+@import url(__submit/form-edit__submit.css);
+
+.form-edit {
+    max-width: 430px;
+    width: calc(100% - 50px);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 36px 34px;
+    box-sizing: border-box;
+}
