@@ -8,3 +8,4 @@
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/form-edit/form-edit.css);
 @import url(../blocks/wrapper/wrapper.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
