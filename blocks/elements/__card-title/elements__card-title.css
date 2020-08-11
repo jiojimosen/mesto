@@ -1,14 +1,14 @@
 .elements__card-title {
     margin: 0;
-    height: 79px;
     color: #000;
-    background-color: #fff;
     font-size: 24px;
     line-height: 29px;
     font-weight: 900;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 21px;
-    padding-right: 15px;
+    /*display: flex;
+    align-items: center;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /*padding-left: 21px;
+    padding-right: 15px;*/
 }

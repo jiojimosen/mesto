@@ -1,0 +1,7 @@
+
+@media(max-width: 679px) {
+    .profile__info {
+        text-align: center;
+        margin-top: 14px;
+    }
+}
