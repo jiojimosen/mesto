@@ -2,13 +2,21 @@
 
 .header {
     max-width: 882px;
-    height: 73px;
-    margin: 0 auto;
+    display: flex;
+    margin: auto;
+    padding: 45px 20px 40px 0;
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+    box-sizing: border-box;
 }
 
 @media (max-width: 920px) {
     .header {
-        padding: 0 20px;
+        padding: 45px 20px 40px 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        padding: 45px 27px 40px 27px;
     }
 }

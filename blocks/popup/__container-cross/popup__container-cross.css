@@ -9,6 +9,8 @@
     cursor: pointer;
     transition: opacity ease-in 0.3s;
     margin-top: -30px;
+    border: 0;
+    background-color: transparent;
 }
 
 .popup__container-cross:hover {

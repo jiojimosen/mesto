@@ -1,5 +1,10 @@
 @import url(__container/popup__container.css);
 @import url(__container-cross/popup__container-cross.css);
+@import url(__form/popup__form.css);
+@import url(__form-title/popup__form-title.css);
+@import url(__form-item/popup__form-item.css);
+@import url(__form-submit/popup__form-submit.css);
+@import url(__form-set/popup__form-set.css);
 
 .popup {
     width: 100%;

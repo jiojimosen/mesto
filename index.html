@@ -8,92 +8,94 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="popup">
-            <div class="popup__container">
-                <!--<div class="popup__container-cross" onclick="popupOpen()"></div>-->
-                <form class="form-edit">
-                    <p class="form-edit__title">Редактировать профиль</p>
-                    <fieldset class="form-edit__person">
-                        <input class="form-edit__name" type="text" name="name">
-                        <input class="form-edit__description" type="text" name="description">
-                        <input class="form-edit__submit" type="submit">
-                    </fieldset>
-                </form>
-                <div class="popup__container-cross"></div>
-            </div>
-        </div>
-
         <header class="header wrapper__header">
             <img class="header__logo" src="images/logo.svg" alt="Лого" />
         </header>
 
-        <section class="profile wrapper__profile">
-            <img class="profile__image" src="images/profile-image.png" alt="Изображение профиля" />
-            <!--<div class="profile__text">
-                <h1 class="profile__title">Жак-Ив Кусто</h1>
-                <p class="profile__subtitle">Исследователь океана</p>
-            </div>-->
-            <div class="profile__info">
-                <div class="profile__name">
-                    <h1 class="profile__title">Жак-Ив Кусто</h1>
-                    <button class="profile__edit-button"></button>
-                </div>
-                <p class="profile__subtitle">Исследователь океана</p>
-            </div>
-            <button class="profile__add-button"></button>
-        </section>
+        
 
-        <main class="elements">
-            <div class="elements__card">
-                <img class="elements__card-image" src="images/cards/karachaevsk.png" alt="Карачаевск">
-                <div class="elements__card-content">
-                    <h2 class="elements__card-title">Карачаевск</h2>
-                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+        <main>
+            <section class="profile wrapper__profile">
+                <img class="profile__image" src="images/profile-image.png" alt="Изображение профиля" />
+                <!--<div class="profile__text">
+                    <h1 class="profile__title">Жак-Ив Кусто</h1>
+                    <p class="profile__subtitle">Исследователь океана</p>
+                </div>-->
+                <div class="profile__info">
+                    <div class="profile__name">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <button class="profile__edit-button" type="button"></button>
+                    </div>
+                    <p class="profile__subtitle">Исследователь океана</p>
                 </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__card-image" src="images/cards/elbrus.png" alt="Эльбрус">
-                <div class="elements__card-content">
-                    <h2 class="elements__card-title">Гора Эльбрус</h2>
-                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                <button class="profile__add-button" type="button"></button>
+            </section>
+
+            <section class="elements">
+                <div class="elements__card">
+                    <img class="elements__card-image" src="images/cards/karachaevsk.png" alt="Карачаевск">
+                    <div class="elements__card-content">
+                        <h2 class="elements__card-title">Карачаевск</h2>
+                        <button class="elements__like" type="submit"></button>
+                    </div>
                 </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__card-image" src="images/cards/dombay.png" alt="Домбай">
-                <div class="elements__card-content">
-                    <h2 class="elements__card-title">Домбай</h2>
-                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                <div class="elements__card">
+                    <img class="elements__card-image" src="images/cards/elbrus.png" alt="Эльбрус">
+                    <div class="elements__card-content">
+                        <h2 class="elements__card-title">Гора Эльбрус</h2>
+                        <button class="elements__like" type="submit">
+                    </div>
                 </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__card-image" src="images/cards/elbrus.png" alt="Эльбрус">
-                <div class="elements__card-content">
-                    <h2 class="elements__card-title">Гора Эльбрус</h2>
-                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                <div class="elements__card">
+                    <img class="elements__card-image" src="images/cards/dombay.png" alt="Домбай">
+                    <div class="elements__card-content">
+                        <h2 class="elements__card-title">Домбай</h2>
+                        <button class="elements__like" type="submit">
+                    </div>
                 </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__card-image" src="images/cards/dombay.png" alt="Домбай">
-                <div class="elements__card-content">
-                    <h2 class="elements__card-title">Домбай</h2>
-                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                <div class="elements__card">
+                    <img class="elements__card-image" src="images/cards/elbrus.png" alt="Эльбрус">
+                    <div class="elements__card-content">
+                        <h2 class="elements__card-title">Гора Эльбрус</h2>
+                        <button class="elements__like" type="submit">
+                    </div>
                 </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__card-image" src="images/cards/karachaevsk.png" alt="Карачаево-Черкессия">
-                <div class="elements__card-content">
-                    <h2 class="elements__card-title">Карачаево-Черкессия</h2>
-                    <img class="elements__like" src="images/ui/like.svg" alt="Нравится">
+                <div class="elements__card">
+                    <img class="elements__card-image" src="images/cards/dombay.png" alt="Домбай">
+                    <div class="elements__card-content">
+                        <h2 class="elements__card-title">Домбай</h2>
+                        <button class="elements__like" type="submit">
+                    </div>
                 </div>
-            </div>
+                <div class="elements__card">
+                    <img class="elements__card-image" src="images/cards/karachaevsk.png" alt="Карачаево-Черкессия">
+                    <div class="elements__card-content">
+                        <h2 class="elements__card-title">Карачаево-Черкессия</h2>
+                        <button class="elements__like" type="submit">
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
             <p class="footer__title">&copy; 2020 Mesto Russia</p>
         </footer>
+
+        <div class="popup">
+            <div class="popup__container">
+                <form class="popup__form" name="bio">
+                    <h2 class="popup__form-title">Редактировать профиль</h2>
+                    <fieldset class="popup__form-set">
+                        <input id="form-name" class="popup__form-item" type="text" name="name">
+                        <input id="form-description" class="popup__form-item" type="text" name="description">
+                        <input class="popup__form-submit" type="submit" value="Сохранить">
+                    </fieldset>
+                </form>
+                <button class="popup__container-cross"></button>
+            </div>
+        </div>
     
     </div>
-<script src="blocks/popup/popup.js"></script>
-<script src="blocks/form-edit/form-edit.js"></script>   
+<script src="./script/script.js"></script>
 </body>
 </html>
