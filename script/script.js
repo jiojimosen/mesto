@@ -12,29 +12,45 @@ function getName() {
     formDescription.setAttribute('value', `${description.textContent}`);
 };
 
-function popupOpen() {
-    popup.classList.toggle('popup_opened');
+//function popupOpen() {
+    //popup.classList.toggle('popup_opened');
+//}
+
+function popupClose () {
+    popup.classList.remove('popup_opened');
+}
+
+function popupOpen () {
+    popup.classList.add('popup_opened');
+    if (popup.classList.contains('popup_opened')) {
+        formName.setAttribute('value', `${name.textContent}`);
+        formDescription.setAttribute('value', `${description.textContent}`);
+    }
+
+    //else {
+      //  popup.classList.toggle('popup_opened');
+    //}
 }
 
 function formSubmitHandler (evt) {
     evt.preventDefault(); 
     
-    let nameInput = document.querySelector("#form-name"); 
-    let jobInput = document.querySelector("#form-description");
+    //let nameInput = document.querySelector("#form-name"); 
+    //let jobInput = document.querySelector("#form-description");
     
-    let selName = nameInput.value;
-    let selJob = jobInput.value;
+    //let selName = formName.value;
+    //let selJob = formDescription.value;
 
-    let insName = document.querySelector(".profile__title");
-    let insJob = document.querySelector(".profile__subtitle");
+    //let insName = document.querySelector(".profile__title");
+    //let insJob = document.querySelector(".profile__subtitle");
 
-    insName.textContent = selName;
-    insJob.textContent = selJob;
+    name.textContent = formName.value;
+    description.textContent = formDescription.value;
     
-    popupOpen();
+    popupClose();
 }
 
 editPopup.addEventListener('click', popupOpen);
-editPopup.addEventListener('click', getName);
-closePopup.addEventListener('click', popupOpen);
+//editPopup.addEventListener('click', getName);
+closePopup.addEventListener('click', popupClose);
 formElement.addEventListener('submit', formSubmitHandler);
