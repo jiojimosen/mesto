@@ -7,10 +7,6 @@ let formName = document.querySelector("#form-name");
 let formDescription = document.querySelector("#form-description");
 let formElement = document.querySelector("form");
 
-function popupClose () {
-    popup.classList.remove('popup_opened');
-}
-
 function popupOpen () {
     popup.classList.toggle('popup_opened');
     if (popup.classList.contains('popup_opened')) {
