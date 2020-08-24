@@ -4,7 +4,7 @@
     flex-direction: column;
     margin-bottom: 18px;
     margin-right: 18px;
-}
+ }
 
 .elements__card:nth-child(3n) {
     margin-right: 0;

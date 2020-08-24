@@ -1,0 +1,20 @@
+@import url(__container/card-add__container.css);
+@import url(__container-cross/card-add__container-cross.css);
+@import url(__form/card-add__form.css);
+@import url(__form-set/card-add__form-set.css);
+@import url(__form-item/card-add__form-item.css);
+@import url(__form-title/card-add__form-title.css);
+@import url(__form-submit/card-add__form-submit.css);
+
+
+.card-add {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}

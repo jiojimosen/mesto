@@ -1,0 +1,22 @@
+.card-add__form-submit {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    transition: background-color ease-in 0.3s;
+    border: 0;
+    outline: none;
+    margin-top: 48px;
+    cursor: pointer;
+}
+
+.card-add__form-submit:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
