@@ -11,3 +11,5 @@
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/card-add/card-add.css);
 @import url(../blocks/card-add/_opened/card-add_opened.css);
+@import url(../blocks/elements/__like/_liked/elements__like_liked.css);
+@import url(../blocks/elements/__card/_hide/elements__card_hide.css);

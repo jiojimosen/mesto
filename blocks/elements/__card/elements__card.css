@@ -4,9 +4,10 @@
     flex-direction: column;
     margin-bottom: 18px;
     margin-right: 18px;
+    position: relative;
  }
 
-.elements__card:nth-child(3n) {
+ .elements__card:nth-child(3n) {
     margin-right: 0;
 }
 

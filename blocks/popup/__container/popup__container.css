@@ -7,6 +7,18 @@
     box-sizing: border-box;*/
     display: flex;
     justify-content: space-around;
+    animation-name: zoom-in;
+    animation-duration: 0.5s
+}
+
+@keyframes zoom-in {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom-out {
+    from {transform:scale(1)} 
+    to {transform:scale(0)}
 }
 
 @media(max-width: 320px) {
