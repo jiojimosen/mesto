@@ -24,6 +24,12 @@ function cardSubmitHandler (evt) {
         evt.target.classList.toggle('elements__like_liked');
     });
 
+    cardContent.querySelector('.elements__delete').addEventListener('click', function() {
+        const delButton = document.querySelector('.elements__delete');
+        const toDel = delButton.closest('.elements__card');
+        toDel.remove();
+    });
+
     if ((cardLink.value <= 0) || (cardName.value <= 0)) {
         alert('Форма должна быть заполнена');
     }

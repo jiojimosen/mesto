@@ -27,18 +27,33 @@ const initialCards = [
 
 const cardUnit = document.querySelector('.elements');
 
+/*
+delButton.addEventListener('click', function () {
+    const delCard = delButton.closest('.elements__card');
+    delCard.remove();
+  });*/
+
 const newCard = card => {
     const cardTemplate = document.querySelector('#card-template').content;
     const cardContent =  cardTemplate.cloneNode(true);
     cardContent.querySelector('.elements__card-image').src = card.link;
     cardContent.querySelector('.elements__card-image').alt = card.name;
     cardContent.querySelector('.elements__card-title').textContent = card.name;
-
+    
     cardContent.querySelector('.elements__like').addEventListener('click', function(evt) {
         evt.target.classList.toggle('elements__like_liked');
     });
 
+    
+    cardContent.querySelector('.elements__delete').addEventListener('click', function() {
+        const delButton = document.querySelector('.elements__delete');
+        const toDel = delButton.closest('.elements__card');
+        toDel.remove();
+    });
+
+    
     cardUnit.append(cardContent);
 };
 
 initialCards.forEach(newCard);
+
